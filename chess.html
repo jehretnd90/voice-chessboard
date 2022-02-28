@@ -8,6 +8,8 @@
 <link rel="stylesheet" href="css/chesspage.css" />
 </head>
 <body>
+	<div class="grid-container">
+		<div class="grid-item">
 	<div id="chessboard"></div>
 
 	<div id="board"></div>
@@ -23,13 +25,18 @@
 		<input class="game-button" type="button" id="voiceBtn"
 			value="Start voice recognition" />
 	</div>
+		</div>
+		<div class="grid-item">	
 	<p id="pgn-wrapper">
 		PGN: <span id="pgn"></span>
 	</p>
 	<div id="lastInputWrapper"></div>
+		</div>
+	</div>
 	<script src="js/chessboard.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/chess.js"></script>
 	<script src="js/integratedchess.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
