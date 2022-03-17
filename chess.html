@@ -16,7 +16,7 @@
 .grid-item {
   
  
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 </style>
@@ -24,7 +24,10 @@
 <body>
 	<div class="grid-container">
 			<div class="grid-item">
-	<"Trash"></div>
+	  	<div>user: <span id="user"></span></div>
+	<div>chatbot: <span id="chatbot"></span></div>
+	<div><input id="input" type="text" placeholder="say anything..." autocomplete="off"/></div>
+				
 		<div class="grid-item">
 	<div id="chessboard"></div>
 
@@ -49,6 +52,33 @@
 	<div id="lastInputWrapper"></div>
 		</div>
 	</div>
+	<script type="text/javascript">
+var trigger = [
+	["hi","hey","hello"], 
+	["how are you", "how is life", "how are things"],
+	["what are you doing", "what is going on"],
+	["how old are you"],
+	["who are you", "are you human", "are you bot", "are you human or bot"],
+	["who created you", "who made you"],
+	["your name please",  "your name", "may i know your name", "what is your name"],
+	["bye", "good bye", "goodbye", "see you later"],	
+	["nice move"],
+
+];
+var reply = [
+	["loser","\"Left On Read\"","weirdo"], 
+	["Sorry, I dont talk to losers", "Shut up" , "Whatever loser"],
+	["Beating You", "HAHA, like i'd tell a loser like you"],
+	["old enough to know you suck at chess"],
+	["I am god", "weird question"],
+	["lol", "weirdo"],
+	["call me master, bitch", "greatest chess player"],
+	["Bye", "Goodbye", "See you later"],
+	["easy to find good moves against bad players"]
+
+];
+var alternative = ["Haha...", "Eh..."];
+	</script>	
 	<script src="js/chessboard.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="js/chess.js"></script>
